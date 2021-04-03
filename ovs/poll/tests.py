@@ -33,6 +33,7 @@ class TestProjectListPage(StaticLiveServerTestCase):
         time.sleep(1)
         self.browser.find_element_by_name("confirm_password").send_keys("123456")
         time.sleep(1)
+        
         self.browser.find_element_by_class_name("btn").click()
         time.sleep(5)
 
@@ -46,6 +47,4 @@ class TestProjectListPage(StaticLiveServerTestCase):
         self.browser.find_element_by_class_name("btn").click()
         time.sleep(3)
 
-        #clicktovote
-        self.browser.find_element_by_class_name("clicktovote").click()
-        time.sleep(3)
+      
